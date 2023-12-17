@@ -1,0 +1,282 @@
+ 
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: #8CC461;
+  font-family: Roboto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 32px;
+  gap: 30px;
+
+}
+
+.container{
+  display: flex;
+  width: 800px;
+  height: 143px;
+  border: 2px solid white;
+  border-radius: 13px ;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.game p{
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.yourScore, .compScore{
+  width: 149px;
+  height: 138px;
+  color: #656565;
+  background: #FFFFFF;
+  text-align: center;
+  border-radius: 9px;
+
+  
+  
+}
+.yourScore .title{
+  width: 100px;
+  margin-left: 22px;
+
+}
+.title{
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 23px;
+
+}
+
+.number{
+  color: black;
+  font-size: 68px;
+  font-weight: 600;
+}
+
+.score{
+  display: flex;
+  justify-content:space-between;
+  width: 350px;
+
+}
+
+.icons{
+  display: grid;
+  grid-template-columns: 120px 120px;
+  
+  column-gap: 282px;
+  width: 595px;
+  height: 353px;
+  margin-left: 395px;
+}
+
+.rock, .rock-class{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 50%;
+  border: 15px solid #0074B6;
+  width: 120px;
+  height: 120px;
+}
+
+
+
+.paper, .paper-class{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 50%;
+  border: 15px solid #FFA943 ;
+  width: 120px;
+  height: 120px;
+}
+.scissors, .scissors-class{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  border: 15px solid #BD00FF;
+  
+}
+
+.scissors2{
+  margin-top: 90px;
+  margin-left: 203px;
+}
+.rock-class, .paper-class, .scissors-class{
+  margin-top: 85px;
+}
+.second{
+  display: grid;
+  grid-template-columns: 595px 330px;
+  width: 1345px;
+  justify-content: space-between;
+  height: 420px;
+  
+}
+
+.rules{
+  display: grid;
+  grid-template-rows: 15px 330px;
+  
+  
+}
+
+.replay-btn{
+  margin-left: 295px;
+  width: 100px;
+}
+
+.js-display{
+  width: 240px;
+  height: 310px;
+  background-color: #004429;
+  padding: 20px;
+  color: white;
+  border: 6px solid white;
+  border-radius: 10px;
+}
+
+h1{
+  color: white;
+  font-weight: 500;
+  font-size: 29px;
+  margin-bottom: 15px;
+}
+
+.cross-btn{
+  width: 50px;
+  height: 50px;
+  background-color:#FF0000 ;
+  color: white;
+  font-weight: 400;
+  font-size: 34px;
+  border: 6px solid white ;
+  border-radius: 50%;
+  margin-left: 250px;
+  z-index: 1;
+}
+
+.rules-btn{
+  width: 120px;
+  height: 40px;
+  border-radius: 10px;
+  border: 2px solid #FFFFFF;
+  background-color: #8CC461;
+  text-align: center;
+  font-size: 21px;
+  font-weight: 600;
+  color: white;
+  margin-top: 25px;
+  margin-left: 1186px;
+
+}
+
+
+
+.js-display li {
+  text-align: start;
+  margin-bottom: 9px;
+}
+
+#line1{
+  position: absolute;
+  top: 298px;
+  left: 624px;
+  width: 270px;
+  height: 20px;
+  z-index: -1;
+}
+
+#line2{
+  position: absolute;
+  top: 340px;
+  left: 810px;
+  height: 200px;
+  width: 90px;
+  transform: rotate(12deg);
+  z-index: -2;
+}
+
+#line3{
+  position: absolute;
+  top:330px;
+  left: 628px;
+  height: 220px;
+  width: 90px;
+  transform: rotate(-15deg);
+  z-index: -1;
+}
+
+.secondIcons{
+  display: grid;
+  grid-template-columns: 120px 180px 120px;
+  column-gap: 50px;
+  margin-left: 395px;
+  width: 595px;
+  height: 353px;
+}
+
+
+.final-result{
+  margin-top: 135px;
+  margin-left: 5px;
+  width: 200px;
+}
+.next-btn{
+  width: 120px;
+  height: 40px;
+  border-radius: 10px;
+  border: 2px solid #FFFFFF;
+  background-color: #8CC461;
+  text-align: center;
+  font-size: 21px;
+  font-weight: 600;
+  color: white;
+  margin-top: 25px;
+
+}
+
+.final-result button {
+  width: 174px;
+  height: 44px;
+  border-radius: 9px;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: #6B6B6B;
+  margin-left: 15px;
+  margin-top: 14px;
+
+}
+
+.final-result p{
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  font-weight: 800;
+
+}
+
+span{
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 5px;
+}
